@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import './Components/Style.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Status from './Components/Status';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+        <div>
+        <h5>Hello admin.</h5>
+        <h5>View the status of your agents and the evolution of their latest alerts</h5>
+        <div className='text'>
+          <h2>Installed agents by their status</h2>
+        </div>
+      </div>
+      <Status/>
     </div>
   );
 }
